@@ -1,0 +1,23 @@
+[project]
+name = "hse-m1-python-final-project"
+dynamic = ["version"]
+description = "HSE. Магистратура - 1 курс. Финальный проект по Язык Python для разработчиков. Проект - Электронная библиотека"
+readme = "README.md"
+authors = [
+    { name = "Evgeniy Gribanov", email = "evgeniy.therabbit@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.20.1",
+    "asyncpg>=0.32.0",
+    "dynaconf>=3.3.5",
+    "fastapi>=0.165.0",
+    "gunicorn[fast]>=27.0.1",
+    "scalar-fastapi>=1.11.0",
+    "sqlalchemy>=2.1.9",
+    "structlog>=26.1.0",
+    "uvloop>=0.23.0",
+]
+
+[tool.setuptools.dynamic]
+version = { file = "VERSION" }
